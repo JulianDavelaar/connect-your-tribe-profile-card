@@ -1,27 +1,11 @@
 {% render 'partials/head.liquid' %}
 
-  <section class="profile-card-V2">
-    <img src="assets/bewerkte foto.png" alt="">
-    <div><h1>{{ person.name }}</h1>
-<p>Voorhout</p>
-<p>22</p></div>
-  </section>
-  <section class="slider">
-    <h2>🏍️💨</h2>
-
-
-  
-  
-  <!-- hieronder een stukje tekst over mezelf, waarbij ik ervoor heb gezorgd dat dit alleen de helft van het scherm inneemt, 
-dit zal later nog gewijzigd worden zodat het voor de hele pagina geld -->
-  </section>
-<div> <section class="tekst1">
-  <h3>wie ben ik?</h3>
-    <p>Ik volg momenteel de opleiding Front-end Design & Development.
-    Ik ben leergierig en altijd op zoek naar nieuwe kennis en technieken.
-    Mijn passie ligt bij creatieve en gebruiksvriendelijke webdesigns, 
-    en ik blijf mezelf graag ontwikkelen om steeds beter te worden.</p>
-</section>
-</div>
+<article> 
+ <h1> {{ person.name }} </h1>
+   <h2> {{ person.home }} </h2>
+     <p> {{ person.info }} </p>
+       <h3> {{ person.contact }} </h3>
+         <img src="/bewerkte-foto.png">
+</article>
 
 {% render 'partials/foot.liquid' %}
