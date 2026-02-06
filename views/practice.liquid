@@ -1,0 +1,14 @@
+<h1>Data-Driven Web</h1>
+<p>Ik ben dus {{ person.name }}</p>
+<p>En me bijnaam is {{ person.nickname }}
+
+<p>Het is vandaag {{ 'now' | date: '%d%q of %b' }}</p>
+<p>Mijn geboortedatum is {{ person.birthdate | date: '%d-%m-%y' }}
+
+<p>Dit is mijn naam op GitHub {{ person.github_handle }}</p>
+
+<p>En bezoek deze <a href="{{ person.website }}">link</a> voor een leuke video </p>
+
+
+
+<details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>

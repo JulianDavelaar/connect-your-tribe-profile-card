@@ -2,10 +2,14 @@
 
 <article> 
  <h1> {{ person.name }} </h1>
-   <h2> {{ person.home }} </h2>
-     <p> {{ person.info }} </p>
-       <h3> {{ person.contact }} </h3>
-         <img src="/bewerkte-foto.png">
+   <h2> {{ person.custom.job }} </h2>
+    <h3> {{ person.custom.home }} </h3>
+      <p> {{ person.info }} </p>
+        <h4> {{ person.custom.phone }} </h3>
+          <h5> {{ person.birthdate }} </h5>
+            <img src="/bewerkte-foto.png">
+
+           <details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>
 </article>
 
 {% render 'partials/foot.liquid' %}

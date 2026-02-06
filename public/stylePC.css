@@ -4,19 +4,26 @@ article {
  position: absolute;
  left: 50%;
  top: 50%;
+ background-image: url(businesscard.jpg);
+ color:rgb(187, 88, 18);
+ padding-left: 1em;
  transform: translate(-50%, -50%);
 
-  background-color: red;
   outline: solid;
   width: 50em;
   aspect-ratio: 2/1;
   border-radius: .1rem;
 
   box-shadow: 
-  2px 2px 0 #black,
-  4px 4px 0 #black,
-  6px 6px 10px rgba(0,0,0,0.1);
+  2px 2px 0 black,
+  4px 4px 0 black,
+  6px 6px 10px black
 }
+
+h1 {
+  pos
+}
+
 
 img {
   width: 15%;
